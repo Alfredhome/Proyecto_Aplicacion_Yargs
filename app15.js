@@ -1,5 +1,5 @@
-const {crearArchivo} = require (`./helpers/multiplicar4`)
-const colors = require ('colors')
+const { crearArchivo } = require(`./helpers/multiplicar4`)
+const colors = require('colors')
 const argv = require('./config/yargs2')
 
 
@@ -7,9 +7,9 @@ console.clear();
 
 console.log(argv);
 
-crearArchivo(argv.b, arg.l)
+crearArchivo(argv.b, argv.l)
     .then(nombreArchivo => console.log(nombreArchivo.rainbow, 'creado'))
-    .catch (err => console.log(err));
+    .catch(err => console.log(err));
 
 /*
     *	Tarea: Modificar la aplicacion para que acepte otra bandera llamada --hasta o -h
@@ -21,4 +21,3 @@ crearArchivo(argv.b, arg.l)
     *	Las tablase de deben de desplegar de una forma agradable y coherente.
     
 */
-    

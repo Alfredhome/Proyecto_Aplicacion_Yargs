@@ -16,15 +16,7 @@ const argv = require('yargs')
         default: false
     })
 
-    //Modifique aqui --------------------------------
 
-    .option('h', {
-        alias: 'hasta',
-        type: 'number',
-        demandOption: true,
-    })
-
-    //---------------------------------
 
     .check((argv, options) => {
         if (isNAN(argv.b)) {

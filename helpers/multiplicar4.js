@@ -1,14 +1,7 @@
+
 const fs = require('fs')
 const colors = require('colors')
 
-/*
-* Se utiliza el modulo.exports para dar permiso a este archivo
-* de exportar crearArchivo hasta el final de este archivo.
-* Aqui esta agrgar el listar
-
-* Se agrego a esta funcion el parametro listar=false por si el usuario 
-* no envia la 1 se sobre entiende queno quiere imprimir
-*/
 
 const crearArchivo = async (base = 5, listar = false) => {
     try {
@@ -21,8 +14,8 @@ const crearArchivo = async (base = 5, listar = false) => {
         // Si viene el parametro listar es decir existe entonces imprime esto en consola
         // lo que s encuentra acumulado en la varible salida
         if (listar) {
-            console.log('====================').green;
-            console.log(' Tabla del:', green, colors.blue(base));
+            console.log('===================='.green);
+            console.log(' Tabla del:'.green, colors.blue(base));
             console.log('===================='.green);
             console.log(salida);
         }
